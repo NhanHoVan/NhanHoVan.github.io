@@ -53,18 +53,6 @@ To deploy the site, you can either publish a new Release on GitHub or trigger th
 
 After the workflow completes, find your live URL at **Settings → Pages** (format: `https://username.github.io`).
 
-### Before publishing
-
-Update `_config.yml` with your real information:
-
-- `url`: Change `https://username.github.io` to your actual GitHub Pages URL
-- `title`: Your site title
-- `description`: SEO description
-- `author.name`, `author.bio`, `author.email`: Your personal info
-- Social links: Update all GitHub/LinkedIn/YouTube/Facebook URLs
-
-See `_pages/deploy-checklist.md` for the full pre-deploy and post-deploy checklist.
-
 ## Structure
 
 - `_posts/` — Blog posts (format: `YYYY-MM-DD-title.md`)
