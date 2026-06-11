@@ -61,6 +61,7 @@ html, body {
 
 .grid__item .page__meta {
   margin: 0 0 10px !important;
+  font-size: 0.75em;
 }
 
 // ============================================================
@@ -629,7 +630,7 @@ html, body {
 }
 
 .archive-post-meta {
-  font-size: 0.75rem !important;
+  font-size: 0.7rem !important;
   color: #888888;
   margin-bottom: 0.5rem;
   display: flex;
@@ -762,7 +763,13 @@ html, body {
 // ============================================================
 
 #main {
-  padding-inline: 1.5em !important;
+  padding-inline: 0 !important;
+}
+
+@media (max-width: 1280px) {
+  #main {
+    padding-inline: 1.5em !important;
+  }
 }
 
 // Ẩn ngày cập nhật (Updated: ...) mặc định ở cuối bài viết vì đã có metadata ở trên đầu
