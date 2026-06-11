@@ -1,0 +1,9 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Bài viết"
+    url: /articles/
+  - title: "Dự án"
+    url: /projects/
+  - title: "Giới thiệu"
+    url: /about/

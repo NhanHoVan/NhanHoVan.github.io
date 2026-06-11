@@ -1,0 +1,16 @@
+# Jekyll temporary files & output
+.jekyll-cache/
+.jekyll-metadata
+_site/
+.sass-cache/
+
+# Ruby/Bundler dependencies
+.bundle/
+vendor/
+vendor/bundle/
+.ruby-lsp/
+
+# Editor configuration
+.kiro/
+.vscode/
+.DS_Store

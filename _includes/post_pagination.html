@@ -1,0 +1,14 @@
+{% if page.previous or page.next %}
+  <nav class="custom-post-pagination">
+    {% if page.previous %}
+      <a href="{{ page.previous.url | relative_url }}" class="pagination-link prev" title="{{ page.previous.title }}">
+        &laquo; Bài trước
+      </a>
+    {% endif %}
+    {% if page.next %}
+      <a href="{{ page.next.url | relative_url }}" class="pagination-link next" title="{{ page.next.title }}">
+        Bài sau &raquo;
+      </a>
+    {% endif %}
+  </nav>
+{% endif %}

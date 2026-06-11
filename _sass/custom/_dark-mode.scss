@@ -1,0 +1,128 @@
+// Override Minimal Mistakes cho dark mode
+[data-theme="dark"] {
+  // Màu nền & text
+  &, body {
+    background-color: #1A1A1A !important;
+  }
+  color: #DDDDDD;
+
+  // Heading tags (softer white to prevent halation and eye strain)
+  h1, h2, h3, h4, h5, h6 {
+    color: #EEEEEE !important;
+  }
+
+  // Masthead (header navigation)
+  .masthead {
+    background-color: #222222 !important;
+    border-bottom: 1px solid #333333 !important;
+  }
+
+  .greedy-nav {
+    background: transparent !important;
+    a {
+      color: #EEEEEE !important;
+      font-weight: bold !important;
+      
+      &:hover {
+        color: #FFFFFF !important;
+        text-decoration: underline !important;
+      }
+    }
+  }
+  
+  .masthead__menu-item {
+    a {
+      color: #EEEEEE !important;
+      font-weight: bold !important;
+    }
+  }
+
+  // Sidebar in dark mode (soft light grey)
+  .sidebar {
+    background-color: #1A1A1A;
+    color: #CCCCCC !important;
+    
+    a {
+      color: #CCCCCC !important;
+      
+      &:hover {
+        color: #FFFFFF !important;
+      }
+      
+      &.active-sidebar-link {
+        color: #4da3ff !important;
+      }
+    }
+    
+    .author__name {
+      color: #EEEEEE !important;
+    }
+    
+    .author__bio,
+    .author__location {
+      color: #AAAAAA !important;
+    }
+  }
+
+  // Article text content & excerpts (gentle contrast to prevent eye strain)
+  .page__content {
+    color: #D1D5DB !important;
+    
+    h1, h2, h3, h4, h5, h6 {
+      color: #EEEEEE !important;
+    }
+
+    p, li, blockquote {
+      color: #D1D5DB !important;
+    }
+
+    // Inline code in dark mode
+    :not(pre) > code {
+      background-color: #2D2D2D !important;
+      color: #D1D5DB !important;
+    }
+  }
+
+  .archive__item-excerpt,
+  .archive-post-excerpt,
+  .archive-project-description,
+  .featured-project-card__content p {
+    color: #CCCCCC !important;
+  }
+
+  // Code blocks
+  .highlight,
+  pre,
+  code,
+  div.highlighter-rouge,
+  figure.highlight {
+    background-color: #2D2D2D !important;
+    color: #D1D5DB !important;
+    border-color: #333333 !important;
+  }
+
+  // Tables in dark mode
+  thead {
+    background-color: #2D2D2D !important;
+    border-bottom: 2px solid #444444 !important;
+  }
+
+  th {
+    color: #EEEEEE !important;
+  }
+
+  td {
+    border-bottom: 1px solid #333333 !important;
+    color: #D1D5DB !important;
+  }
+
+  // Borders, dividers và footer
+  hr {
+    border-color: #333333;
+  }
+
+  .page__footer {
+    background-color: #222222 !important;
+    border-top-color: #333333 !important;
+  }
+}

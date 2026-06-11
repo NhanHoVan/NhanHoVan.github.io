@@ -1,0 +1,22 @@
+{% if page.attachments %}
+  <div class="post-attachments">
+    <h4>📎 Tài nguyên đính kèm</h4>
+    <ul>
+      {% for attachment in page.attachments %}
+        {% if attachment.url contains "http" %}
+          <li>
+            <a href="{{ attachment.url }}" target="_blank" rel="noopener noreferrer">
+              {{ attachment.label }} ↗
+            </a>
+          </li>
+        {% else %}
+          <li>
+            <a href="{{ attachment.url }}" download>
+              {{ attachment.label }} ↓
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}

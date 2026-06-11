@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="layout--{{ page.layout | default: 'default' }} {% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' }}{% endif %}">
+
+    {% include_cached skip-links.html %}
+
+    <!-- ① BANNER: custom include -->
+    {% include header/banner.html %}
+
+    <!-- ② MASTHEAD: custom navigation include -->
+    {% include header/navigation.html %}
+
+    <div class="initial-content">
+      {{ content }}
+    </div>
+
+    {% if site.search == true %}
+      <div class="search-content">
+        {% include_cached search/search_form.html %}
+      </div>
+    {% endif %}
+
+    <div id="footer" class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include_cached footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+</html>

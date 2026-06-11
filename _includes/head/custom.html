@@ -1,0 +1,17 @@
+<!-- Dark mode: áp dụng theme trước khi render để tránh FOUC -->
+<script>
+  (function() {
+    try {
+      var theme = localStorage.getItem('theme') || 'light';
+      if (theme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    } catch(e) {}
+  })();
+</script>
+
+<!-- Custom CSS (dark mode styles) -->
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+
+<!-- Dark mode JS -->
+<script src="{{ '/assets/js/dark-mode.js' | relative_url }}" defer></script>
