@@ -40,8 +40,7 @@
     var checkbox = document.getElementById('dark-mode-toggle');
     if (!checkbox) return;
     checkbox.checked = (theme === 'dark');
-    var label = checkbox.closest('label') || checkbox;
-    label.setAttribute('aria-label', theme === 'dark' ? 'Chuyển sang Light Mode' : 'Chuyển sang Dark Mode');
+    checkbox.setAttribute('aria-label', theme === 'dark' ? 'Chuyển sang Light Mode' : 'Chuyển sang Dark Mode');
   }
 
   /**
@@ -65,6 +64,18 @@
       checkbox.addEventListener('change', handleToggle);
     }
     applyTheme(getSavedTheme());
+
+    // Giải mã email bị che giấu khi click
+    document.querySelectorAll('.author-email-link').forEach(function (el) {
+      el.addEventListener('click', function (e) {
+        e.preventDefault();
+        var user = el.getAttribute('data-user');
+        var domain = el.getAttribute('data-domain');
+        if (user && domain) {
+          window.location.href = 'mailto:' + user + '@' + domain;
+        }
+      });
+    });
   });
 
   // Áp dụng sớm nhất có thể để tránh flash of unstyled content

@@ -54,8 +54,9 @@
       {% endif %}
       
       {% if author.email %}
+        {% assign email_parts = author.email | split: "@" %}
         <li>
-          <a href="mailto:{{ author.email }}" rel="nofollow noopener noreferrer me">
+          <a href="#" class="author-email-link" data-user="{{ email_parts[0] }}" data-domain="{{ email_parts[1] }}" rel="nofollow noopener noreferrer me">
             <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
             <span class="label">{{ site.data.ui-text[locale].email_label | default: "Email" }}</span>
           </a>

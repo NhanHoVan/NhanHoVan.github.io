@@ -1048,6 +1048,14 @@ input:checked + .slider {
     margin: 0 !important;
   }
   
+  .author__bio {
+    font-size: 0.9em !important;
+  }
+  
+  .author__location {
+    font-size: 0.75em !important;
+  }
+  
   /* Dark Mode buttons */
   [data-theme="dark"] .author__urls a {
     background-color: #1a1a1a !important;
@@ -1096,17 +1104,19 @@ input:checked + .slider {
   .author__name {
     margin-top: 0 !important;
     margin-bottom: 8px !important;
-    font-size: 1.3em !important;
+    font-size: 1.5em !important;
   }
   
   .author__bio {
     margin-bottom: 5px !important;
+    font-size: 0.9em !important;
   }
   
   .author__location {
     margin-top: 5px !important;
     margin-bottom: 15px !important;
-    text-align: center !important;
+    text-align: left !important;
+    font-size: 0.9em !important;
   }
   
   /* Style Webrick follow popup dropdown */
@@ -1373,4 +1383,56 @@ input:checked + .slider {
 /* 4. Hide Page Title Override */
 .hide-title .page__title {
   display: none !important;
+}
+
+/* ============================================================
+   POST ATTACHMENTS STYLE
+   ============================================================ */
+.post-attachments {
+  margin: 2rem 0 !important;
+  padding: 1.25rem !important;
+  border: 1px solid #E0E0E0 !important;
+  border-radius: 6px !important;
+  background-color: #fafbfc !important;
+
+  h4 {
+    margin-top: 0 !important;
+    margin-bottom: 0.75rem !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+  }
+
+  ul {
+    margin: 0 !important;
+    padding-left: 1.25rem !important;
+    list-style-type: disc !important;
+  }
+
+  li {
+    margin-bottom: 0.5rem !important;
+    font-size: 0.9rem !important;
+    
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  a {
+    color: #0275d8 !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+
+  [data-theme="dark"] & {
+    border-color: #333333 !important;
+    background-color: #222222 !important;
+
+    a {
+      color: #4da3ff !important;
+    }
+  }
 }
