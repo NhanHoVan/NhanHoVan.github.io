@@ -12,6 +12,9 @@ classes: wide
     <li class="archive-project-item">
       <h3 class="archive-project-title">
         <a href="{{ prj.url | relative_url }}">{{ prj.title }}</a>
+        {% if prj.project_type %}
+          <span class="project-type-badge project-type-badge--{{ prj.project_type | slugify }}">{{ prj.project_type }}</span>
+        {% endif %}
       </h3>
       {% if prj.description %}
         <p class="archive-project-description">{{ prj.description }}</p>
