@@ -1,12 +1,12 @@
 ---
 title: "Social Sheet Poster"
-date: 2023-09-01
+date: 2025-12-31
 featured: true
-project_type: "Cá nhân & Freelance"
+project_type: "Cá nhân"
 description: "Công cụ tự động hóa việc lên lịch và xuất bản bài viết lên Facebook Page trực tiếp từ Google Sheets, hỗ trợ làm việc nhóm."
 tech_stack: [Go, React, TypeScript, Vite, Ant Design, PostgreSQL, Google Sheets API, Facebook Graph API, Vercel, GCP Cloud Run, GitHub Actions, Docker]
 header:
-  overlay_image: /assets/images/default-banner.jpg
+  overlay_image: /assets/images/projects/2025-12-31-facebook-auto-posting-platform.png
   overlay_filter: 0.3
 demo_url: "https://social-sheet-poster-f.vercel.app/"
 ---
@@ -33,4 +33,4 @@ Bạn chỉ cần chuẩn bị bài đăng, soạn thảo nội dung, gắn th�
 - **Vận hành & Deployment:** Tự động hóa qua GitHub Actions, triển khai Frontend trên Vercel và chạy Container Backend trên GCP Cloud Run qua Docker.
 
 ## Đường dẫn dự án
-- **Trải nghiệm trực tuyến (Live Demo):** [social-sheet-poster-f.vercel.app]({{ page.demo_url }})
+- **Trải nghiệm trực tuyến (Live Demo):** [social-sheet-poster-f.vercel.app]({{ page.demo_url }}){:target="_blank" rel="noopener noreferrer"}
