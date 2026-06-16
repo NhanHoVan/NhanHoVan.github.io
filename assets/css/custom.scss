@@ -89,20 +89,27 @@ html, body {
   margin: 0 auto 0 auto;
   /* Căn giữa và tăng khoảng cách phía dưới với menu */
   width: 100%;
-  height: 300px; /* Tăng độ cao tối đa lên 300px như yêu cầu */
+  height: 300px; /* Độ cao mặc định trên desktop */
   overflow: hidden;
   border-radius: 0 0 4px 4px;
-  /* Bo nhẹ hai góc dưới để tạo cảm giác mềm mại */
   background: transparent !important; /* Không có background */
+
+  @media (max-width: 767px) {
+    height: auto; /* Chiều cao header banner tự động co giãn theo hình ảnh trên mobile */
+    border-radius: 0;
+  }
 
   &__image {
     width: 100%;
     height: 100%;
-    background-size: cover !important;
-    /* Đảm bảo hình ảnh header sử dụng cover */
-    background-position: center !important;
-    background-repeat: no-repeat;
-    background-color: transparent !important; /* Đảm bảo hình ảnh không có background */
+    object-fit: cover; /* Giữ nguyên hiệu ứng cover trên desktop */
+    object-position: center;
+    display: block;
+
+    @media (max-width: 767px) {
+      height: auto; /* Ảnh tự động tính chiều cao theo tỷ lệ rộng trên mobile */
+      object-fit: contain; /* Đảm bảo hình ảnh vừa khít, không bị cắt bớt */
+    }
   }
 }
 
@@ -977,7 +984,7 @@ input:checked + .slider {
     width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
-    max-height: 300px !important;
+    max-height: 400px !important;
     object-fit: contain !important; /* Dùng contain để không bị crop mất góc ảnh trong suốt */
   }
 }
@@ -1000,7 +1007,7 @@ input:checked + .slider {
     width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
-    max-height: 300px !important;
+    max-height: 400px !important;
     object-fit: contain !important;
   }
   
@@ -1090,8 +1097,8 @@ input:checked + .slider {
   
   .author__avatar {
     display: block !important;
-    width: 120px !important; /* Hiển thị ảnh đại diện lớn ở đầu */
-    height: 120px !important;
+    width: 200px !important; /* Hiển thị ảnh đại diện lớn ở đầu */
+    height: auto !important;
     margin: 0 auto 15px auto !important;
   }
   
@@ -1484,5 +1491,12 @@ input:checked + .slider {
       color: #e1bee7;
       border-color: rgba(225, 190, 231, 0.2);
     }
+  }
+}
+
+// Remove border-bottom from h2 elements on the About page
+.page {
+  h2 {
+    border-bottom: none !important;
   }
 }
