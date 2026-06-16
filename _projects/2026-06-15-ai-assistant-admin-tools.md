@@ -3,7 +3,7 @@ title: "AI Assistant & Admin Tools"
 date: 2026-06-15
 featured: true
 project_type: "Cá nhân"
-description: "Plugin WordPress toàn diện tích hợp Trợ lý ảo AI Chatbot tương tác, hệ thống viết bài tự động chuẩn SEO, tùy biến đăng nhập thương hiệu và bảo mật log hệ thống."
+description: "Plugin WordPress toàn diện tích hợp Trợ lý ảo AI Chatbot tương tác, hệ thống viết bài tự động chuẩn SEO, tùy biến đăng nhập thương hiệu."
 tech_stack: [WordPress, PHP, React, JavaScript, HTML5, CSS3, OpenAI API, MySQL, WP Cron]
 header:
   overlay_image: /assets/images/projects/2026-06-15-ai-assistant-admin-tools.png
@@ -18,10 +18,9 @@ demo_url: "https://nhanhovan.github.io/ai-assistant-admin-tools-docs/"
 ### Trợ Lý Ảo AI Chatbot (Virtual Assistant)
 Tính năng hỗ trợ khách hàng thông minh hiển thị trực tiếp tại giao diện Frontend của website:
 * **Thu thập Lead tự động (Lead Capture):** Yêu cầu khách hàng nhập thông tin gồm Tên, Email và Ngành nghề trước khi trò chuyện, giúp tích lũy dữ liệu khách hàng tiềm năng một cách tự nhiên.
-* **Tùy biến giao diện linh hoạt:** Cho phép admin thay đổi Avatar, đặt tên cho trợ lý (ví dụ: *Mimi*, *Jarvis*), thay đổi màu sắc background/text của bong bóng chat để khớp với nhận diện thương hiệu của website.
+* **Tùy biến giao diện linh hoạt:** Cho phép admin thay đổi Avatar, đặt tên cho trợ lý, thay đổi màu sắc background/text của bong bóng chat để khớp với nhận diện thương hiệu của website.
 * **Q&A Keyword Matching (Tiết kiệm chi phí):** Thiết lập các cặp hỏi đáp nhanh dựa trên từ khóa. Khi tin nhắn chứa từ khóa chỉ định, chatbot trả lời ngay lập tức mà không cần gọi API OpenAI.
 * **Hỏi đáp thông minh theo danh mục sản phẩm (WooCommerce):** Người dùng có thể chọn chuyên mục bài viết hoặc danh mục sản phẩm WooCommerce quan tâm. Hệ thống tự động đính kèm thông tin mô tả danh mục cùng 5 sản phẩm/bài viết mới nhất làm ngữ cảnh để AI đưa ra câu trả lời cực kỳ chính xác kèm link sản phẩm trực tiếp.
-* **Lịch sử trò chuyện:** Ghi lại toàn bộ lịch sử trò chuyện của từng khách hàng giúp admin theo dõi hành vi và chăm sóc kịp thời.
 
 ### Viết Bài Tự Động Bằng AI (AI Post Generator)
 Công cụ đắc lực hỗ trợ biên tập viên tạo bài viết chuẩn SEO trực tiếp trong admin WordPress:
@@ -31,11 +30,11 @@ Công cụ đắc lực hỗ trợ biên tập viên tạo bài viết chuẩn S
 
 ## Công nghệ sử dụng
 
-* **Ngôn ngữ cốt lõi:** PHP (phát triển các Class xử lý Logic, API Endpoint, và WP Cron tác vụ ngầm).
+* **Ngôn ngữ:** PHP (phát triển các Class xử lý Logic, API Endpoint, và WP Cron tác vụ ngầm).
 * **Giao diện trang quản trị:** React, JavaScript, CSS3, Gutenberg Block API (thiết kế Sidebar và Meta Box).
-* **Giao diện Frontend Chatbot:** Thuần JavaScript, CSS3 (Glassmorphism design, tối ưu hiệu suất tải trang).
-* **Cơ sở dữ liệu:** MySQL (sử dụng đối tượng `$wpdb` để khởi tạo các bảng lưu trữ tùy biến cho cấu hình, lịch sử chat và hàng đợi xử lý).
-* **Tích hợp dịch vụ:** OpenAI API (GPT-4o / GPT-3.5) phục vụ chatbot và viết bài chuẩn SEO.
+* **Giao diện Frontend Chatbot:** JavaScript, CSS3 (Glassmorphism design, tối ưu hiệu suất tải trang).
+* **Cơ sở dữ liệu:** MySQL
+* **Tích hợp dịch vụ:** OpenAI API phục vụ chatbot và viết bài chuẩn SEO.
 
 ## Trách nhiệm trong dự án
 * Thiết kế kiến trúc plugin theo mô hình hướng đối tượng (OOP) sạch sẽ, phân tách rõ ràng giữa phần xử lý Admin và Frontend.

@@ -26,9 +26,9 @@ Bạn chỉ cần chuẩn bị bài đăng, soạn thảo nội dung, gắn th�
 
 ## Công nghệ sử dụng
 
-- **Giao diện người dùng (Frontend):** React.js, TypeScript, Vite, Ant Design (giao diện kéo thả trực quan và quản lý trạng thái mượt mà bằng Context API).
+- **Giao diện người dùng (Frontend):** React.js, TypeScript, Vite, Ant Design.
 - **Hệ thống xử lý (Backend):** Go (Golang) được thiết kế theo mô hình Clean Architecture (Handler, UseCase, Repository) giúp xử lý nhanh và tiết kiệm tài nguyên.
-- **Cơ sở dữ liệu:** PostgreSQL (lưu trữ thông tin phòng, người dùng, và mã hóa token xác thực).
+- **Cơ sở dữ liệu:** PostgreSQL.
 - **Tích hợp bên thứ ba:** Google Sheets API (quét dữ liệu bảng tính) và Facebook Graph API (kết nối xuất bản bài viết).
 - **Vận hành & Deployment:** Tự động hóa qua GitHub Actions, triển khai Frontend trên Vercel và chạy Container Backend trên GCP Cloud Run qua Docker.
 
