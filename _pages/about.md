@@ -6,7 +6,7 @@ author_profile: true
 classes: hide-title
 ---
 
-Chào bạn, tôi là **Hồ Văn Nhân** — một kỹ sư lập trình đam mê công nghệ và luôn tìm kiếm sự tối ưu trong từng dòng code. Với hơn 5 năm đồng hành cùng các dự án phần mềm đa dạng trong và ngoài nước, tôi tập trung chuyên sâu vào phát triển hệ thống backend hiệu năng cao sử dụng hệ sinh thái Java.
+Chào bạn, tôi là **Nhân** — một kỹ sư lập trình đam mê công nghệ và luôn tìm kiếm sự tối ưu trong từng dòng code. Với hơn 5 năm đồng hành cùng các dự án phần mềm đa dạng trong và ngoài nước, tôi tập trung chuyên sâu vào phát triển hệ thống backend hiệu năng cao sử dụng hệ sinh thái Java.
 
 Ngôn ngữ lập trình chính của tôi là **Java**. Bên cạnh đó, tôi đã tự học và ứng dụng thành công **Go (Golang)** vào nhiều dự án thực tế.
 
@@ -18,10 +18,10 @@ Ngôn ngữ lập trình chính của tôi là **Java**. Bên cạnh đó, tôi 
 **Thời gian:** 08/2023 – Hiện tại · Đà Nẵng, Việt Nam
 
 * **Dự án RemoteClaw (04/2026 – 06/2026):**
-  - *Mô tả:* Hệ thống backend điều khiển và vận hành trò chơi gắp thú thời gian thực trực tiếp từ xa. Người chơi tương tác trực tiếp với máy gắp thú vật lý thông qua giao diện Unity.
+  - *Mô tả:* Hệ thống backend điều khiển và vận hành trò chơi gắp thú thời gian thực trực tiếp từ xa. Người chơi tương tác trực tiếp với máy gắp thú vật lý thông qua app.
   - *Công việc thực hiện:*
     - Phát triển hệ thống xử lý logic backend thời gian thực cho phòng chơi, quản lý ghép cặp (matchmaking), cấu hình điểm số và đồng bộ trạng thái trận đấu.
-    - Cấu hình và viết các kịch bản kiểm thử tích hợp tự động (integration test) sử dụng Testcontainers để giả lập kết nối và chạy thử nghiệm trực tiếp trên database chứa trong container Docker.
+    - Cấu hình và viết các kịch bản kiểm thử tích hợp tự động (integration test) sử dụng Testcontainers để giả lập kết nối và chạy thử nghiệm trực tiếp trên database.
   - *Tech Stack:* `Java (Spring Boot)` `Gradle` `JMS` `WebSocket` `Redis` `MySQL` `MyBatis-Plus` `Testcontainers` `Docker`
 
 * **Hệ thống Quản lý Hợp đồng (08/2023 – 03/2026):**
