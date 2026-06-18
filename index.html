@@ -91,7 +91,7 @@ overlay_filter: 0.3
           {% else %}
           <time>--/--/----</time>
           {% endif %}
-          <a href="{{ post.link }}" target="_blank" rel="noopener noreferrer" title="{{ post.domain }}">{{ post.title }}
+          <a href="{{ post.link | escape }}" target="_blank" rel="noopener noreferrer" title="{{ post.domain | escape }}">{{ post.title | escape }}
             <i class="fas fa-external-link-alt" aria-hidden="true"
               style="font-size: 0.8em; margin-left: 4px; opacity: 0.7;"></i></a>
         </li>

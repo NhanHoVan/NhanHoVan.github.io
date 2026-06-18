@@ -1,12 +1,16 @@
+<!-- Content Security Policy (CSP) -->
+<meta http-equiv="Content-Security-Policy"
+  content="default-src 'self'; script-src 'self' 'unsafe-inline' https://kit.fontawesome.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://use.fontawesome.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://use.fontawesome.com https://cdn.jsdelivr.net; img-src 'self' data: https://*; connect-src 'self' https://*; frame-src 'self' https://*;">
+
 <!-- Dark mode: áp dụng theme trước khi render để tránh FOUC -->
 <script>
-  (function() {
+  (function () {
     try {
       var theme = localStorage.getItem('theme') || 'light';
       if (theme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
       }
-    } catch(e) {}
+    } catch (e) { }
   })();
 </script>
 
