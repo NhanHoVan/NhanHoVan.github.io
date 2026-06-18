@@ -39,7 +39,8 @@ author:
   avatar: /assets/images/avatar-profile.png
   bio: "Java Developer / Full-stack Developer"
   location: "Đà Nẵng, Việt Nam"
-  email: "nhanhv.qt@gmail.com"
+  email_user: "nhanhv.qt"
+  email_domain: "gmail.com"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
