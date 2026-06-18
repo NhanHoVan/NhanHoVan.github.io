@@ -1,8 +1,8 @@
 name: Deploy Jekyll to GitHub Pages
 
 on:
-  release:
-    types: [published]
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -26,11 +26,13 @@ jobs:
         with:
           ruby-version: '3.1'
           bundler-cache: true
+          bundler: '2.3.3'
 
       - name: Build with Jekyll
         run: bundle exec jekyll build --destination ./_site
         env:
           JEKYLL_ENV: production
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
